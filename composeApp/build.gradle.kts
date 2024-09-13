@@ -60,13 +60,13 @@ kotlin {
             implementation(compose.material3)
         }
         commonMain.dependencies {
-
+            implementation(libs.koin.compose)
+            implementation(libs.koin.core)
             implementation(libs.voyager.navigator)
             implementation(libs.voyager.bottomSheetNavigator)
             implementation(libs.voyager.transitions)
             implementation(libs.voyager.tabNavigator)
-//            implementation(libs.voyager.koin)
-
+            implementation(libs.compose.calculatewindowsize)
             implementation(libs.kotlinx.datetime)
             implementation(libs.kotlinx.serialization)
 

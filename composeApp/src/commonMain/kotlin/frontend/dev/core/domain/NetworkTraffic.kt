@@ -7,9 +7,9 @@ import kotlinx.serialization.Serializable
 data class NetworkTraffic(
     val source_ip: String,
     val destination_ip: String,
-    val packet_length: Int,
+    val packet_length: Long,
     val source_port: Int,
     val destination_port: Int,
     val username: String? = null,
-    val timestamp: LocalDateTime,
+    val timestamp: String,
 )

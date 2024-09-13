@@ -11,20 +11,22 @@ import androidx.compose.runtime.Applier
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.alpha
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import cafe.adriel.voyager.navigator.tab.Tab
 import cafe.adriel.voyager.navigator.tab.TabNavigator
 import frontend.dev.core.presentation.utils.FilledIcon
 
 @Composable
-fun Applier(
+fun AppNavigationRailBar(
     modifier: Modifier = Modifier,
     tabNavigator: TabNavigator,
     navRailItems: List<Tab>,
 ) {
+    val color = Color(0xFFEFF4F8)
     NavigationRail(
         modifier = modifier.fillMaxHeight().alpha(0.95f),
-        containerColor =  MaterialTheme.colorScheme.surface,
+        containerColor =  color,
         header = {
             Icon(
                 modifier = Modifier.size(42.dp),

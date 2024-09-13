@@ -8,6 +8,9 @@ val PrimaryLightColor = PrimaryColor.copy(alpha = 0.75f)
 val SecondaryColor = Color(0xff7C93BE)
 val SecondaryLightColor = SecondaryColor.copy(alpha = 0.75f)
 
+val H2Separator = Color(0xFFEFF4F8)
+
+
 val PrimaryTextColor = Color(0xffffffff)
 val SecondaryTextColor = Color(0xff000000)
 
